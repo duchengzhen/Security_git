@@ -9,3 +9,4 @@ Security_git
 内存清理
 流量显示
 联网获取信息
+apk下载地址http://pan.baidu.com/s/1qW8XViO
