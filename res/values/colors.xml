@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="titlebar_app_name">#ffffbb33</color>
+    <color name="titlebar_background">#ffEDEDED</color>
+    <color name="background">#000000</color>
+    <color name="text_solid_background">#FFFEBD22</color>
+    <color name="dialog_title_background">#FFFEBD22</color>
+    <color name="transparent">#00000000</color>
+    <color name="button_background">#ffE5E5E5</color>
+    <color name="main_titlebar_bg">#ff1E1E1E</color>
+    <color name="iv_titlebar_select">#ff2F2F2F</color>
+    <color name="white">#ffffffff</color>
+    <color name="bg_nav_item_press">#ff292C2C</color>
+    <color name="bg_nav_item_normal">#ff222222</color>
+    <color name="black">#ff000000</color>
+    <color name="main_seperate_line">#ffcdcdcd</color>
+    <color name="gridview_item_selected_stroke">#ffcc3131</color>
+    <color name="gridview_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="gridview_item_text_color_normal">#ff454545</color>
+    <color name="gridview_item_pressed">#ffE4E4E4</color>
+    <color name="bg_custom_titlebar">#ff1780C0</color>
+    <color name="bg_guide">#ffEDEDED</color>
+    <color name="listview_divider">#ffEDEDED</color>
+    <color name="custom_gray">#ffAFAFAF</color>
+	
+	<color name="Layout_backround">#ffededed</color>
+    <color name="Transparent">#00000000</color>
+    <color name="window_background">#ffededed</color>
+    <color name="window_background_dark_transparent">#c0000000</color>
+    <color name="textcolor_blue">#ff268bc3</color>
+    <color name="textcolor_brown">#ff864e0d</color>
+    <color name="textcolor_green">#ff5fa33a</color>
+    <color name="textcolor_red">#ffdf2700</color>
+    <color name="textcolor_white">#ffffffff</color>
+    <color name="textcolor_widget_default">#ff575757</color>
+    <color name="textcolor_widget_green">#ff1f5b11</color>
+    <color name="textcolor_widget_yellow">#ff993300</color>
+    <color name="bandwidth_blue">#ff7ddeff</color>
+    <color name="bandwidth_blue_stroke">#ff78bfd5</color>
+    <color name="bandwidth_green">#ffb8d1aa</color>
+    <color name="bandwidth_green_stroke">#ff778949</color>
+    <color name="bandwidth_red">#fff37878</color>
+    <color name="bandwidth_red_stroke">#ffa15a5a</color>
+    <color name="bandwidth_background">#ffcccccc</color>
+    <color name="bandwidth_foreground">#ff000000</color>
+    <color name="clover_pressed">#ff70b946</color>
+    <color name="clover_normal">#00ffffff</color>
+    <color name="dark_gray">#ff828282</color>
+    <color name="splash_background">#ff5ea8dc</color>
+    <color name="main_gridview_bg">#ffECECEC</color>
+    <color name="main_gridview_item_bg">#ffF9F9F9</color>
+    <color name="main_status_bg">#ffF3F3F3</color>
+    <color name="main_gridview_item_pressed_bg">#ffE4E4E4</color>
+    <color name="main_bg">#ffF6F6F6</color>
+    <color name="main_title_bg">#ffECECEC</color>
+
+</resources>

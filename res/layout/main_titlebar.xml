@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/rl_main_titlebar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_titlebar_height"
+    android:background="@color/main_titlebar_bg">
+
+    <ImageView
+        android:id="@+id/iv_titlebar_nav"
+        android:layout_width="@dimen/main_titlebar_height"
+        android:layout_height="@dimen/main_titlebar_height"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/iv_titlebar_selector"
+        android:clickable="true"
+        android:contentDescription="打开菜单"
+        android:focusable="true"
+        android:scaleType="center"
+        android:src="@drawable/titlebar_nav"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="安全管家"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/iv_titlebar_mail"
+        android:layout_width="@dimen/main_titlebar_height"
+        android:layout_height="@dimen/main_titlebar_height"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/iv_titlebar_selector"
+        android:clickable="true"
+        android:contentDescription="意见反馈"
+        android:focusable="true"
+        android:scaleType="center"
+        android:src="@drawable/titlebar_mail"
+        />
+
+
+</RelativeLayout>

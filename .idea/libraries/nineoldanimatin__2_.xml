@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="nineoldanimatin (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/nineoldanimatin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/.ideaLibSources/nineoldandroids/src" />
+    </SOURCES>
+  </library>
+</component>

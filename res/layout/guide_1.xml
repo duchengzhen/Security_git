@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0sp"
+        android:layout_weight="9.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0sp"
+            android:layout_weight="9.0"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0sp"
+                android:layout_weight="4.0"
+                android:orientation="vertical"
+                android:paddingTop="10.0dip">
+
+                <TextView
+                    style="@style/TextAppearance.Large"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Guide_SetPassword"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5.0dip"
+                    android:layout_weight="0.5"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Guide_SetPassword_Warn"
+                    android:textColor="@color/secondary_text"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:layout_weight="0.5"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0sp"
+                android:layout_weight="7.0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0sp"
+                    android:layout_weight="3.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextAppearance"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0sp"
+                        android:layout_weight="1.0"
+                        android:text="@string/Guide_Password"/>
+
+                    <EditText
+                        android:id="@id/guide_one_config_password_EditText"
+                        style="@style/EditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0sp"
+                        android:layout_weight="2.0"
+                        android:hint="@string/Guide_Password_Length"
+                        android:imeOptions="actionNext"
+                        android:maxLength="8"
+                        android:maxLines="1"
+                        android:password="true"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5.0dip"
+                    android:layout_weight="0.5"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0sp"
+                    android:layout_weight="3.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextAppearance"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0sp"
+                        android:layout_weight="1.0"
+                        android:text="@string/Guide_Password_Confirm"/>
+
+                    <EditText
+                        android:id="@id/guide_one_config_passwordOk_EditText"
+                        style="@style/EditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0sp"
+                        android:layout_weight="2.0"
+                        android:hint="@string/Guide_Password_Length"
+                        android:imeOptions="actionDone"
+                        android:lines="1"
+                        android:maxLength="8"
+                        android:password="true"
+                        android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                style="@style/TextAppearance.Large"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0sp"
+                android:layout_weight="1.0"
+                android:text="@string/Guide_SetPassword_Can"
+                android:textColor="#ff000000"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:layout_weight="0.5"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0sp"
+                android:layout_weight="10.0">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_rect"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10.0dip">
+
+                        <TextView
+                            style="@style/TextAppearance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0sp"
+                            android:layout_weight="1.0"
+                            android:text="@string/Guide_PhoneLocate"/>
+
+                        <TextView
+                            style="@style/TextAppearance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0sp"
+                            android:layout_weight="1.0"
+                            android:text="@string/Guide_PhoneLocate_Can"
+                            android:textColor="@color/secondary_text"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="@color/window_background"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10.0dip">
+
+                        <TextView
+                            style="@style/TextAppearance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0sp"
+                            android:layout_weight="1.0"
+                            android:text="@string/Guide_Destroy"/>
+
+                        <TextView
+                            style="@style/TextAppearance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0sp"
+                            android:layout_weight="1.0"
+                            android:text="@string/Guide_Destroy_Can"
+                            android:textColor="@color/secondary_text"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="@color/window_background"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10.0dip">
+
+                        <TextView
+                            style="@style/TextAppearance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0sp"
+                            android:layout_weight="1.0"
+                            android:text="@string/Guide_GetData"/>
+
+                        <TextView
+                            style="@style/TextAppearance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0sp"
+                            android:layout_weight="1.0"
+                            android:text="@string/Guide_GetData_Can"
+                            android:textColor="@color/secondary_text"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="@color/window_background"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10.0dip">
+
+                        <TextView
+                            style="@style/TextAppearance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0sp"
+                            android:layout_weight="1.0"
+                            android:text="@string/Guide_Alert"/>
+
+                        <TextView
+                            style="@style/TextAppearance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0sp"
+                            android:layout_weight="1.0"
+                            android:text="@string/Guide_Alert_Can"
+                            android:textColor="@color/secondary_text"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="@color/window_background"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10.0dip">
+
+                        <TextView
+                            style="@style/TextAppearance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0sp"
+                            android:layout_weight="1.0"
+                            android:text="@string/Guide_Warn"/>
+
+                        <TextView
+                            style="@style/TextAppearance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0sp"
+                            android:layout_weight="1.0"
+                            android:text="@string/Guide_Warn_Can"
+                            android:textColor="@color/secondary_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.0sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?android:listPreferredItemHeight"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/page_padding"
+        android:paddingRight="@dimen/page_padding">
+
+        <Button
+            android:id="@id/guide_one_config_nex_Button"
+            style="@style/Button.Deepin"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:text="@string/Wizard_Next"/>
+    </LinearLayout>
+
+</LinearLayout>

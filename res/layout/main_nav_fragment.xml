@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/nav_menu_width"
+                android:layout_height="match_parent"
+                android:clickable="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_main_titlebar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_titlebar_height"
+        android:background="@color/main_titlebar_bg">
+
+        <ImageView
+            android:id="@+id/iv_nav_phone"
+            style="@style/iv_titlebar_style"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/iv_titlebar_selector"
+            android:contentDescription="拨打电话"
+            android:src="@drawable/shortcut_phone"
+            />
+
+        <ImageView
+            android:id="@+id/iv_nav_facebook"
+            style="@style/iv_titlebar_style"
+            android:layout_toRightOf="@id/iv_nav_phone"
+            android:background="@drawable/iv_titlebar_selector"
+            android:contentDescription="分享到facebook"
+            android:src="@drawable/shortcut_facebook"
+            />
+
+        <ImageView
+            android:id="@+id/iv_nav_twitter"
+            style="@style/iv_titlebar_style"
+            android:layout_centerInParent="true"
+            android:background="@drawable/iv_titlebar_selector"
+            android:contentDescription="打开菜单"
+            android:focusable="true"
+            android:src="@drawable/shortcut_twitter"
+            />
+
+        <ImageView
+            android:id="@+id/iv_nav_search"
+            style="@style/iv_titlebar_style"
+            android:layout_toLeftOf="@id/iv_nav_close"
+            android:background="@drawable/iv_titlebar_selector"
+            android:contentDescription="打开菜单"
+            android:src="@drawable/shortcut_search"
+            />
+
+        <ImageView
+            android:id="@id/iv_nav_close"
+            style="@style/iv_titlebar_style"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/iv_titlebar_selector"
+            android:contentDescription="意见反馈"
+            android:src="@drawable/shortcut_close"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_bottom"
+        android:layout_below="@id/rl_main_titlebar"
+        android:background="@color/bg_nav_item_normal"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/nav_split_line"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/bg_nav_item"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_nav_avator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/nav_margin_left"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/avator"/>
+
+                <TextView
+                    android:id="@+id/tv_nav_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/iv_nav_avator"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/iv_nav_avator"
+                    android:text="calvin"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_nav_username"
+                    android:layout_alignStart="@+id/tv_nav_username"
+                    android:layout_below="@+id/tv_nav_username"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:inputType="textMultiLine"
+                    android:maxLines="2"
+                    android:text="勿以恶小而为之,勿以善小而不为"
+                    android:textColor="#ffCDCDCD"
+                    android:textStyle="italic"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#ff1A1A1A"
+                android:gravity="center"
+                android:text="导航"
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_nav_item_home"
+                style="@style/nav_item"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/iv_nav_item_icon"
+                    android:src="@drawable/nav_home"/>
+
+                <Button
+                    style="@style/nav_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:text="主页"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/nav_split_line"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_nav_item_other"
+                style="@style/nav_item"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/iv_nav_item_icon"
+                    android:src="@drawable/nav_setting"/>
+
+                <Button
+                    style="@style/nav_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent"
+                    android:text="设置"
+                    />
+            </RelativeLayout>
+
+            <View
+                style="@style/nav_split_line"/>
+
+            <RelativeLayout
+                style="@style/nav_item"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/iv_nav_item_icon"
+                    android:src="@drawable/nav_images"/>
+
+                <Button
+                    style="@style/nav_item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent"
+                    android:text="图集"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#ff1A1A1A"
+                android:gravity="center"
+                android:text="其他"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_nav_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/bg_nav_item"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_about"
+                        style="@style/iv_nav_item_icon"
+                        android:src="@drawable/about"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/nav_item_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:text="关于软件"/>
+
+                        <TextView
+                            android:id="@+id/iv_nav_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="当前版本:1.2"
+                            android:textColor="#ff7A7B7B"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/cbox_about_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:button="@drawable/btn_nav_item_selector"
+                        android:clickable="false"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_nav_about_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_nav_item_normal"
+                    android:inputType="textMultiLine"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/about_content"
+                    android:textColor="#ff8F9191"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/nav_split_line"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ff1A1A1A"
+        android:gravity="center"
+        android:text="安全卫士@2014"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

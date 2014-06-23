@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0sp"
+        android:layout_weight="9.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0sp"
+            android:layout_weight="9.0"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0sp"
+                android:layout_weight="4.0"
+                android:orientation="vertical"
+                android:paddingTop="10.0dip">
+
+                <TextView
+                    style="@style/TextAppearance.Large"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Guide_SetSecurity_Number"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5.0dip"
+                    android:layout_weight="0.5"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Guide_SetSecurity_Proposal_Number"
+                    android:textColor="@color/secondary_text"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:layout_weight="0.5"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0sp"
+                android:layout_weight="7.0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0sp"
+                    android:layout_weight="3.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0sp"
+                        android:layout_weight="1.0"
+                        android:text="@string/Guide_Phone_Number"/>
+
+                    <EditText
+                        android:id="@id/guide_two_config_PhoneNum_EditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0sp"
+                        android:layout_weight="2.0"
+                        android:maxLines="1"
+                        android:numeric="integer"
+                        android:phoneNumber="true"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5.0dip"
+                    android:layout_weight="0.5"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0sp"
+                    android:layout_weight="3.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0sp"
+                        android:layout_weight="1.0"
+                        android:text="@string/Guide_Phone_Number_Confirm"/>
+
+                    <EditText
+                        android:id="@id/guide_two_config_PhoneNumOk_EditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.0sp"
+                        android:layout_weight="2.0"
+                        android:maxLines="1"
+                        android:numeric="integer"
+                        android:phoneNumber="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                style="@style/TextAppearance.Large"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0sp"
+                android:layout_weight="1.0"
+                android:text="@string/Guide_SetSecurity_Number_Can"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10.0dip"
+                android:layout_weight="0.5"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0sp"
+                android:layout_weight="10.0">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_rect"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10.0dip">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0sp"
+                            android:layout_weight="1.0"
+                            android:text="@string/Guide_Change_SMS"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="@color/window_background"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10.0dip">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.0sp"
+                            android:layout_weight="1.0"
+                            android:text="@string/Guide_Change_SMS_Can"
+                            android:textColor="@color/secondary_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.0sp"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?android:listPreferredItemHeight"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/page_padding"
+        android:paddingRight="@dimen/page_padding">
+
+        <Button
+            android:id="@id/guide_two_config_nex_Button"
+            style="@style/Button.Deepin"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:text="@string/Wizard_Next"/>
+    </LinearLayout>
+
+</LinearLayout>

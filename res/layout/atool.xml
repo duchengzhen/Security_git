@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/main_titlebar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_atool_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/query"
+            android:textSize="24sp"
+            />
+
+        <View
+            style="@style/setting_divide"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_service"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_atool_number_service_state"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_service_status"
+                    android:textColor="@color/custom_gray"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/custom_checkbox"
+                     android:id="@+id/cb_atool_state"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <View
+            style="@style/setting_divide"
+            />
+
+        <TextView
+            android:id="@+id/tv_atool_select_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_bg"
+            android:textSize="24sp"
+            />
+
+        <View
+            style="@style/setting_divide"
+            />
+
+        <TextView
+            android:id="@+id/tv_atool_change_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/number_display"
+            android:textSize="24sp"
+            />
+
+        <View
+            style="@style/setting_divide"
+            />
+
+        <TextView
+            android:id="@+id/tv_atool_backupSms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sms_backup"
+            android:textSize="24sp"
+            />
+
+        <View
+            style="@style/setting_divide"
+            />
+
+        <TextView
+            android:id="@+id/tv_atool_restoreSms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sms_restore"
+            android:textSize="24sp"
+            />
+
+        <View
+            style="@style/setting_divide"
+            />
+
+        <TextView
+            android:id="@+id/tv_atool_app_lock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_lock"
+            android:textSize="24sp"
+            />
+
+        <View
+            style="@style/setting_divide"
+            />
+
+        <TextView
+            android:id="@+id/tv_atool_common_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/common_number"
+            android:textSize="24sp"
+            />
+
+        <View
+            style="@style/setting_divide"
+            />
+
+    </LinearLayout>
+</LinearLayout>

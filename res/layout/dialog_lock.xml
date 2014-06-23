@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/window_background"
+    android:orientation="vertical"
+    android:padding="10.0dip">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.0sp"
+        android:layout_weight="10.0"/>
+
+    <TextView
+        style="@style/TextAppearance.Large"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Lock_Password"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.0sp"
+        android:layout_weight="2.0"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0sp"
+        android:layout_weight="60.0"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Guide_Password_Length"
+            android:imeOptions="actionDone"
+            android:maxLength="8"
+            android:maxLines="1"
+            android:password="true"
+            android:singleLine="true"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.0sp"
+            android:layout_weight="1.0"/>
+
+        <TextView
+            android:id="@id/forget_TextView"
+            style="@style/TextAppearance"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/textcolor_blue"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.0sp"
+            android:layout_weight="1.0"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="?android:listPreferredItemHeight"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0.0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"/>
+
+            <TextView
+                android:id="@id/warn_TextView"
+                style="@style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textColor="@color/bandwidth_red"/>
+
+            <View
+                android:layout_width="0.0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.0sp"
+            android:layout_weight="1.0"/>
+
+        <LinearLayout
+            android:id="@id/layout"
+            android:layout_width="1.0sp"
+            android:layout_height="1.0sp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="?android:listPreferredItemHeight"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/page_padding"
+            android:paddingRight="@dimen/page_padding">
+
+            <Button
+                android:id="@id/ok"
+                style="@style/Button.Deepin"
+                android:layout_width="0.0sp"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0"
+                android:text="@android:string/ok"/>
+
+            <View
+                android:layout_width="@dimen/page_padding"
+                android:layout_height="fill_parent"/>
+
+            <Button
+                android:id="@id/exit_demo"
+                style="@style/Button.Deepin"
+                android:layout_width="0.0sp"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0"
+                android:paddingLeft="15.0dip"
+                android:text="@string/Lock_ExitDemo"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

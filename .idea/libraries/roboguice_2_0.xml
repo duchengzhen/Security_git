@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="roboguice-2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/roboguice-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/guice-2.0-no_aop.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/ics" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/java" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/froyo" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/tests/java" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/eclair" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/kitkat" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/ics-mr1" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/honeycomb" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/jellybean" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/eclair-mr1" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/gingerbread" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/honeycomb_mr2" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/jellybean-mr1" />
+      <root url="file://D:/application/ADT/sdk/extras/android/support/v4/src/jellybean-mr2" />
+    </SOURCES>
+  </library>
+</component>

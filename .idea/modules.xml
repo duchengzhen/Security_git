@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:/application/AndroidProjects/DragGridView/DragGridView.iml" filepath="D:/application/AndroidProjects/DragGridView/DragGridView.iml" />
+      <module fileurl="file://D:/application/ADT/workspace/Security_OSC/Security_OSC.iml" filepath="D:/application/ADT/workspace/Security_OSC/Security_OSC.iml" />
+      <module fileurl="file://D:/application/ADT/workspace/anti/anti.iml" filepath="D:/application/ADT/workspace/anti/anti.iml" />
+      <module fileurl="file://D:/application/ADT/workspace/appcompat_v7/appcompat_v7.iml" filepath="D:/application/ADT/workspace/appcompat_v7/appcompat_v7.iml" />
+      <module fileurl="file://D:/application/ADT/workspace/lbe/lbe.iml" filepath="D:/application/ADT/workspace/lbe/lbe.iml" />
+      <module fileurl="file://D:/application/ADT/workspace/可拖拽GridView/可拖拽GridView.iml" filepath="D:/application/ADT/workspace/可拖拽GridView/可拖拽GridView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/安全卫士.iml" filepath="$PROJECT_DIR$/安全卫士.iml" />
+    </modules>
+  </component>
+</project>
+

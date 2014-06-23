@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="nineoldanimatin">
+    <CLASSES>
+      <root url="jar://D:/application/AndroidProjects/DragGridView/libs/nineoldanimatin.jar!/" />
+      <root url="jar://D:/application/AndroidProjects/DragGridView/libs/android-support-v4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

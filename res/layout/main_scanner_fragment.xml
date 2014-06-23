@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_main_status"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tc="http://schemas.android.com/apk/res/com.calvin.security"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    android:background="@color/main_status_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_status_taskview"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.5"
+        android:gravity="center">
+
+        <com.calvin.security.view.TasksCompletedView
+            android:id="@+id/taskview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            tc:circleColor="#ff46AF8E"
+            tc:radius="50dp"
+            tc:ringColor="#ffFECC2E"
+            tc:strokeWidth="5dp"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_main_status_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="安全防护"
+                android:textColor="@color/white"
+                android:textSize="22sp"/>
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_status_btn"
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="15.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="15dp"
+        android:layout_weight="5.5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:id="@+id/main_status_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="2"
+            android:text="@string/init_ing"
+            android:textColor="@color/black"
+            android:textSize="17.0sp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18.0dip"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_status_scan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/status_button_selector"
+                android:text="一键体验"
+                android:textSize="16.0sp"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

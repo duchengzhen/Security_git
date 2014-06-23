@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/dialog_titlebar"
+        android:text="@string/setPwd"
+        />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/et_protected_first_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="请输入防盗密码"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/et_protected_first_confirm_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="再次输入防盗密码"
+            android:inputType="textPassword"
+            />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/bt_protected_first_no"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_light_normal_button_selector"
+                android:text="@string/protected_no"
+                />
+
+            <Button
+                android:id="@+id/bt_protected_first_ok"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_deepin_normal_button_selector"
+                android:text="@string/protected_ok"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
